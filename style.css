@@ -261,7 +261,10 @@ footer{
 
 
     }
+
 }
+
+
 
 
 .sidebar {
@@ -528,10 +531,14 @@ section{
     color: #555;
 }
 
-@media  (max-width: 768px) {
-.sidebar.coll ~ .main-content{
+@media (max-width: 768px) {
+    .sidebar.coll ~ .main-content{
     margin-left: 0;
-    /* padding: 0; */
+    
+  }
+  .main-content{
+    margin-left: 0;
+    padding: 10px;
   }
   section{
     width: 100%;
@@ -546,7 +553,7 @@ section{
     margin: 0 auto;
     margin-bottom: 20px;
   }
-  
+
   
 }
 
