@@ -50,3 +50,17 @@ document.querySelectorAll(".video-box").forEach((box) => {
     muteBtn.textContent = video.muted ? "🔇" : "🔊";
   });
 });
+
+const videos = document.querySelectorAll("video");
+
+videos.forEach((video) => {
+  video.addEventListener("mouseenter", () => {
+    video.play();
+  });
+
+  video.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+    video.load();
+  });
+});
